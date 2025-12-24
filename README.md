@@ -1,2 +1,2 @@
 # aengmusae-
-On-device AI for assisting video meeting note-taking
+Program for assisting video meeting note-taking
