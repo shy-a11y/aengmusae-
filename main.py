@@ -1,5 +1,5 @@
 import os
-#라이브러리 충돌 방지
+#Prevent library conflict
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 import sys
@@ -15,7 +15,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 Model setting part
 '''
 MODEL_SIZE = "medium"
-OUTPUT_FILE= "Lecture_anna_laura.txt"
+OUTPUT_FILE= "Lecture_note.txt"
 TEMP_AUDIO = "temp_input.wav"
 
 """
@@ -86,9 +86,9 @@ def transcribe_audio(filename):
 def main():
     print("\n" + "="*60)
     print("     Writing down")
-    print(f"   [{START_KEY}] 키: 녹음 시작")
-    print(f"   [{STOP_KEY}] 키: 녹음 종료 및 변환 시작")
-    print(f"   [{EXIT_KEY}] 키: 프로그램 종료")
+    print(f"   [{START_KEY}] Key: Start recording")
+    print(f"   [{STOP_KEY}] Key: Stop recording and convert the text...")
+    print(f"   [{EXIT_KEY}] Key: Terminate the program ")
     print("="*60)
 
     while True:
